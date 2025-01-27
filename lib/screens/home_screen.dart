@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(width: 16), // Adds spacing between the buttons
             ElevatedButton(
               onPressed: () {
-                context.router.push(PrspyRoute(data: 'PRSpy Data Data'));
+                context.router.push(PrspyRoute());
               },
               child: const Text('PRSpy: Total Players'),
             ),

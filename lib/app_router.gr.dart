@@ -74,41 +74,16 @@ class HomeRoute extends _i4.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.PrspyScreen]
-class PrspyRoute extends _i4.PageRouteInfo<PrspyRouteArgs> {
-  PrspyRoute({
-    _i5.Key? key,
-    required String data,
-    List<_i4.PageRouteInfo>? children,
-  }) : super(
-         PrspyRoute.name,
-         args: PrspyRouteArgs(key: key, data: data),
-         rawPathParams: {'data': data},
-         initialChildren: children,
-       );
+class PrspyRoute extends _i4.PageRouteInfo<void> {
+  const PrspyRoute({List<_i4.PageRouteInfo>? children})
+    : super(PrspyRoute.name, initialChildren: children);
 
   static const String name = 'PrspyRoute';
 
   static _i4.PageInfo page = _i4.PageInfo(
     name,
     builder: (data) {
-      final pathParams = data.inheritedPathParams;
-      final args = data.argsAs<PrspyRouteArgs>(
-        orElse: () => PrspyRouteArgs(data: pathParams.getString('data')),
-      );
-      return _i3.PrspyScreen(key: args.key, data: args.data);
+      return const _i3.PrspyScreen();
     },
   );
-}
-
-class PrspyRouteArgs {
-  const PrspyRouteArgs({this.key, required this.data});
-
-  final _i5.Key? key;
-
-  final String data;
-
-  @override
-  String toString() {
-    return 'PrspyRouteArgs{key: $key, data: $data}';
-  }
 }
