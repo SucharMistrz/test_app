@@ -1,9 +1,8 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:hello_world/app_router.gr.dart';
+import 'app_router.gr.dart';
 
 @AutoRouterConfig(replaceInRouteName: 'Screen|Page,Route')
 class AppRouter extends RootStackRouter {
-
   @override
   RouteType get defaultRouteType => RouteType.material();
 

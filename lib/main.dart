@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/app_router.dart';
+import '../shared/router/app_router.dart';
 
 void main() {
   runApp(MyApp());

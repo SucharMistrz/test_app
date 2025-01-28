@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../model/server.dart';
+import '../models/server_model.dart';
 
 class ServerCubit extends Cubit<List<Server>> {
   ServerCubit() : super([]);
@@ -33,5 +33,9 @@ class ServerCubit extends Cubit<List<Server>> {
         .toList();
 
     emit(servers);
+  }
+
+  int getTotalPlayers() {
+    return state.fold(0, (sum, server) => sum + server.numPlayers);
   }
 }

@@ -11,9 +11,9 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i4;
 import 'package:flutter/material.dart' as _i5;
-import 'package:hello_world/screens/details_screen.dart' as _i1;
-import 'package:hello_world/screens/home_screen.dart' as _i2;
-import 'package:hello_world/screens/prspy_screen.dart' as _i3;
+import 'package:hello_world/views/pages/details_page.dart' as _i1;
+import 'package:hello_world/views/pages/home_page.dart' as _i2;
+import 'package:hello_world/views/pages/prspy_page.dart' as _i3;
 
 /// generated route for
 /// [_i1.DetailsScreen]

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../controller/server_cubit.dart';
-import '../model/server.dart';
+import '../../../shared/controllers/server_controller.dart';
+import '../../../shared/models/server_model.dart';
 
 class ServerList extends StatelessWidget {
   const ServerList({super.key});
@@ -10,10 +10,8 @@ class ServerList extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<ServerCubit, List<Server>>(
       builder: (context, servers) {
-        
-        int totalPlayers = servers.fold(0, (sum, server) => sum + server.numPlayers);
-        
-        
+        final totalPlayers = context.read<ServerCubit>().getTotalPlayers();
+
         return Column(
           children: [
             Text(

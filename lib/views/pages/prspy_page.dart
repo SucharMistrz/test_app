@@ -1,8 +1,8 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../controller/server_cubit.dart';
-import '../view/server_list.dart';
-import 'package:auto_route/auto_route.dart';
+import '../../shared/controllers/server_controller.dart';
+import 'prspy/server_view.dart';
 
 @RoutePage()
 class PrspyScreen extends StatelessWidget {
