@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import '../../shared/router/app_router.gr.dart';
+import 'package:hello_world/shared/router/app_router.gr.dart';
 
 class HomeButtons extends StatelessWidget {
   const HomeButtons({super.key});
@@ -9,17 +9,17 @@ class HomeButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: [
+      children: <Widget>[
         ElevatedButton(
           onPressed: () {
-            context.router.push(DetailsRoute(data: 'Currency Exchange Rate'));
+            context.router.push(CurrencyRoute(data: 'Currency Exchange Rate'));
           },
           child: const Text('TODO Currency Exchange Rate'),
         ),
         const SizedBox(height: 16), // Adds spacing between the buttons
         ElevatedButton(
           onPressed: () {
-            context.router.push(const PrspyRoute());
+            context.router.push(PrspyRoute(data: 'PRSpy: Total Players'));
           },
           child: const Text('PRSpy: Total Players'),
         ),

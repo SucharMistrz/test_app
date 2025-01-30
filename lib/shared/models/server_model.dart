@@ -1,13 +1,15 @@
-class Server {
+class ServerModel {
   String name;
   int numPlayers;
 
-  Server({required this.name, required this.numPlayers});
+  ServerModel({required this.name, required this.numPlayers});
 
-  static Server fromJson(Map<String, dynamic> json) {
-    return Server(
-      name: json['name'],
-      numPlayers: int.parse(json['properties']['numplayers']),
+  static ServerModel fromJson(Map<String, dynamic> json) {
+    final Map<String, dynamic> properties = json['properties'] as Map<String, dynamic>;
+
+    return ServerModel(
+      name: properties['hostname']?.toString() ?? 'Unknown',
+      numPlayers: int.tryParse(properties['numplayers']?.toString() ?? '') ?? 0,
     );
   }
 }
