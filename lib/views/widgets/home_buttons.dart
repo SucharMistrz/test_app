@@ -16,7 +16,7 @@ class HomeButtons extends StatelessWidget {
           },
           child: const Text('TODO Currency Exchange Rate'),
         ),
-        const SizedBox(height: 16), // Adds spacing between the buttons
+        const SizedBox(height: 16),
         ElevatedButton(
           onPressed: () {
             context.router.push(PrspyRoute(data: 'PRSpy: Total Players'));

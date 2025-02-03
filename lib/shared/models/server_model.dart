@@ -1,15 +1,23 @@
+import 'package:hello_world/shared/models/player_model.dart';
+
 class ServerModel {
-  String name;
-  int numPlayers;
+  final String serverId;
+  final String name;
+  final String countryFlag;
+  final int numPlayers;
+  final int maxPlayers;
+  final bool hasMumble;
+  final String mapName;
+  final List<PlayerModel> players;
 
-  ServerModel({required this.name, required this.numPlayers});
-
-  static ServerModel fromJson(Map<String, dynamic> json) {
-    final Map<String, dynamic> properties = json['properties'] as Map<String, dynamic>;
-
-    return ServerModel(
-      name: properties['hostname']?.toString() ?? 'Unknown',
-      numPlayers: int.tryParse(properties['numplayers']?.toString() ?? '') ?? 0,
-    );
-  }
+  ServerModel({
+    required this.serverId,
+    required this.name,
+    required this.countryFlag,
+    required this.numPlayers,
+    required this.maxPlayers,
+    required this.hasMumble,
+    required this.mapName,
+    required this.players,
+  });
 }
