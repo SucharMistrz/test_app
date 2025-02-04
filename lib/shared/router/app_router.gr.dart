@@ -15,7 +15,8 @@ import 'package:hello_world/shared/models/server_model.dart' as _i7;
 import 'package:hello_world/views/pages/currency/currency_page.dart' as _i1;
 import 'package:hello_world/views/pages/home/home_page.dart' as _i2;
 import 'package:hello_world/views/pages/prspy/prspy_page.dart' as _i3;
-import 'package:hello_world/views/pages/prspy/server_details_page.dart' as _i4;
+import 'package:hello_world/views/pages/prspy/server_details/server_details_page.dart'
+    as _i4;
 
 /// generated route for
 /// [_i1.CurrencyPage]
@@ -25,11 +26,11 @@ class CurrencyRoute extends _i5.PageRouteInfo<CurrencyRouteArgs> {
     _i6.Key? key,
     List<_i5.PageRouteInfo>? children,
   }) : super(
-          CurrencyRoute.name,
-          args: CurrencyRouteArgs(data: data, key: key),
-          rawPathParams: {'data': data},
-          initialChildren: children,
-        );
+         CurrencyRoute.name,
+         args: CurrencyRouteArgs(data: data, key: key),
+         rawPathParams: {'data': data},
+         initialChildren: children,
+       );
 
   static const String name = 'CurrencyRoute';
 
@@ -61,7 +62,8 @@ class CurrencyRouteArgs {
 /// generated route for
 /// [_i2.HomePage]
 class HomeRoute extends _i5.PageRouteInfo<void> {
-  const HomeRoute({List<_i5.PageRouteInfo>? children}) : super(HomeRoute.name, initialChildren: children);
+  const HomeRoute({List<_i5.PageRouteInfo>? children})
+    : super(HomeRoute.name, initialChildren: children);
 
   static const String name = 'HomeRoute';
 
@@ -81,11 +83,11 @@ class PrspyRoute extends _i5.PageRouteInfo<PrspyRouteArgs> {
     _i6.Key? key,
     List<_i5.PageRouteInfo>? children,
   }) : super(
-          PrspyRoute.name,
-          args: PrspyRouteArgs(data: data, key: key),
-          rawPathParams: {'data': data},
-          initialChildren: children,
-        );
+         PrspyRoute.name,
+         args: PrspyRouteArgs(data: data, key: key),
+         rawPathParams: {'data': data},
+         initialChildren: children,
+       );
 
   static const String name = 'PrspyRoute';
 
@@ -122,10 +124,10 @@ class ServerDetailsRoute extends _i5.PageRouteInfo<ServerDetailsRouteArgs> {
     _i6.Key? key,
     List<_i5.PageRouteInfo>? children,
   }) : super(
-          ServerDetailsRoute.name,
-          args: ServerDetailsRouteArgs(server: server, key: key),
-          initialChildren: children,
-        );
+         ServerDetailsRoute.name,
+         args: ServerDetailsRouteArgs(server: server, key: key),
+         initialChildren: children,
+       );
 
   static const String name = 'ServerDetailsRoute';
 

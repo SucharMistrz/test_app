@@ -1,5 +1,4 @@
 import 'package:hello_world/infra/dto/player_dto/player_dto.dart';
-import 'package:hello_world/shared/models/player_model.dart';
 import 'package:hello_world/shared/models/server_model.dart';
 
 class ServerDTO {

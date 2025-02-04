@@ -13,7 +13,7 @@ class PrspyServerList extends StatelessWidget {
     return Scaffold(
       body: BlocBuilder<ServerCubit, List<ServerModel>?>(
         builder: (BuildContext context, List<ServerModel>? servers) {
-          if (servers == null) {
+          if (servers == null) { //To-do proper isLoading
             return const Center(child: CircularProgressIndicator());
           }
           return Column(

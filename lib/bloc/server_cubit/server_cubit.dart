@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hello_world/infra/services/server_service.dart';
 import 'package:hello_world/shared/models/server_model.dart';
-import 'package:hello_world/shared/services/server_service.dart';
 
 class ServerCubit extends Cubit<List<ServerModel>?> {
   ServerCubit() : super(null);
